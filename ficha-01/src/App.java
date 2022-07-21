@@ -2,11 +2,13 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        Scanner teclado = new Scanner(System.in);
+        /* 
         // #1
         System.out.println("Alô mundo! I'm back CARAI");
 
         // #2
-        Scanner teclado = new Scanner(System.in);
+        
         System.out.println("Por favor, digite um número entre 0 e 100");
         int numEscolhido = teclado.nextInt();
         System.out.println("O número escolhido foi " + numEscolhido);
@@ -30,6 +32,15 @@ public class App {
         double mediaOfSemester = (firstGrade + secondGrade + thirdGrade + fourthGrade) / 4;
         System.out.println("The media of semester are " + mediaOfSemester);
         // ADICIONAR TRATAMENTO ÀS NOTAS
+        */
+        //#5
+        System.out.println("Por favor, digite a quantidade e centímeros que você deseja converter para metros");
+        float qtdCm = teclado.nextFloat();
+        float qtdMetros = qtdCm/100;
+        System.out.println("A quantidade de "+ qtdCm +" cm equivalem a "+ qtdMetros+" metro(s)");
+        teclado.close();
+
+
 
     }
 }
